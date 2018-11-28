@@ -42,6 +42,7 @@ cd target
 java -jar config-server-1.0.jar
 ```
 
+Head to http://localhost:8888/patient-service.yml or http://localhost:8888/patient-service/default to get a sample configuration
 
 ## Docker
 
