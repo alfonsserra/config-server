@@ -4,7 +4,7 @@
 
 #  Config server
 
-Configuration Server to manage external properties for applications across all environments.
+Configuration Server to manage external properties for applications across all environments. Configurations are stored at https://github.com/systelab/config-server-repository
 
 ## Getting Started
 
@@ -44,6 +44,8 @@ java -jar config-server-1.0.jar
 
 Head to http://localhost:8888/patient-service.yml or http://localhost:8888/patient-service/default to get a sample configuration
 
+Check the repository at https://github.com/systelab/config-server-repository for more available configurations
+
 ## Docker
 
 ### Build docker image
@@ -64,7 +66,6 @@ docker build -t systelab/config-server .
 docker run -p 8888:8888 systelab/config-server
 ```
 
-The app will be available at http://localhost:8761
 
 
 [git]: https://git-scm.com/

@@ -1,4 +1,0 @@
-my:
-  otherprop: myotherval
-server:
-  port: 8080
