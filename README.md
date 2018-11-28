@@ -42,8 +42,6 @@ cd target
 java -jar config-server-1.0.jar
 ```
 
-Head to http://localhost:8700 in order to see the ...
-
 
 ## Docker
 
@@ -62,7 +60,7 @@ docker build -t systelab/config-server .
 ### Run the container
 
 ```bash
-docker run -p 8761:8761 systelab/config-server
+docker run -p 8888:8888 systelab/config-server
 ```
 
 The app will be available at http://localhost:8761
