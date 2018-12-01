@@ -9,7 +9,14 @@ spring:
 
 server:
   port: 8888
-
+  # Enable response compression
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-responsize-size: 1024
+  # Enable HTTP/2 support, if the current environment supports it
+  http2:
+    enabled: true
 eureka:
   instance:
     hostname: localhost
