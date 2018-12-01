@@ -1,28 +1,28 @@
-[![Build Status](https://travis-ci.org/systelab/config-server.svg?branch=master)](https://travis-ci.org/systelab/config-server)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/config-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/config-server&amp;utm_campaign=Badge_Grade)
-[![Known Vulnerabilities](https://snyk.io/test/github/systelab/config-server/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/config-server?targetFile=pom.xml)
+[![Build Status](https://travis-ci.org/systelab/config-service.svg?branch=master)](https://travis-ci.org/systelab/config-service)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/config-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/config-service&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/systelab/config-service/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/config-service?targetFile=pom.xml)
 
 #  Config server
 
-Configuration Server to manage external properties for applications across all environments. Configurations are stored at https://github.com/systelab/config-server-repository
+Configuration Server to manage external properties for applications across all environments. Configurations are stored at https://github.com/systelab/config-service-repository
 
 ## Getting Started
 
-To get you started you can simply clone the `config-server` repository and install the dependencies:
+To get you started you can simply clone the `config-service` repository and install the dependencies:
 
 ### Prerequisites
 
-You need [git][git] to clone the `config-server` repository.
+You need [git][git] to clone the `config-service` repository.
 
 You will need [Java™ SE Development Kit 8][jdk-download] and [Maven][maven].
 
-### Clone `config-server`
+### Clone `config-service`
 
-Clone the `config-server` repository using git:
+Clone the `config-service` repository using git:
 
 ```bash
-git clone https://github.com/systelab/config-server.git
-cd config-server
+git clone https://github.com/systelab/config-service.git
+cd config-service
 ```
 
 ### Install Dependencies
@@ -39,12 +39,12 @@ To launch the server, simply run with java -jar the generated jar file.
 
 ```bash
 cd target
-java -jar config-server-1.0.jar
+java -jar config-service-1.0.jar
 ```
 
 Head to http://localhost:8888/patient-service.yml or http://localhost:8888/patient-service/default to get a sample configuration
 
-Check the repository at https://github.com/systelab/config-server-repository for more available configurations
+Check the repository at https://github.com/systelab/config-service-repository for more available configurations
 
 ## Docker
 
@@ -57,13 +57,13 @@ There is another build rule to trigger a new tag and create a 'version-x.y.z' im
 You can always manually create the image with the following command:
 
 ```bash
-docker build -t systelab/config-server . 
+docker build -t systelab/config-service . 
 ```
 
 ### Run the container
 
 ```bash
-docker run -p 8888:8888 systelab/config-server
+docker run -p 8888:8888 systelab/config-service
 ```
 
 

@@ -4,9 +4,9 @@
 FROM maven:alpine as builder
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN mkdir /config-server
+RUN mkdir /config-service
 
-WORKDIR /config-server
+WORKDIR /config-service
 
 COPY . .
 
@@ -18,7 +18,7 @@ RUN mvn package
 FROM openjdk:8-jre-alpine
 
 
-COPY --from=builder /config-server/target/config-server-1.0.jar config-server.jar
+COPY --from=builder /config-service/target/config-service-1.0.jar config-service.jar
 
 
-CMD ["java","-jar","config-server.jar"]
+CMD ["java","-jar","config-service.jar"]
