@@ -2,9 +2,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/config-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/config-service&amp;utm_campaign=Badge_Grade)
 [![Known Vulnerabilities](https://snyk.io/test/github/systelab/config-service/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/config-service?targetFile=pom.xml)
 
-#  Config server
+#  Configuration Service
 
-Configuration Server to manage external properties for applications across all environments. Configurations are stored at https://github.com/systelab/config-service-repository
+Configuration service to manage external properties for applications across all environments. Configurations are stored at https://github.com/systelab/config-service-repository
 
 ## Getting Started
 
